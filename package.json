@@ -1,0 +1,48 @@
+{
+  "name": "ts-nextjs-express",
+  "version": "1.0.0",
+  "author": "takepepe",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node src/server/index.ts",
+    "redis": "ts-node src/redis/index.ts",
+    "prettier": "prettier \"src/**/*.ts*\" --write"
+  },
+  "dependencies": {
+    "@types/connect-redis": "^0.0.9",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "connect-redis": "^3.4.1",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.16.0",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "redis-server": "^1.2.2",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/body-parser": "^1.17.0",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.16.1",
+    "@types/express-session": "^1.15.12",
+    "@types/next": "^8.0.3",
+    "@types/node": "^11.13.4",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.3",
+    "@types/styled-components": "^4.1.14",
+    "@zeit/next-typescript": "^1.1.1",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
