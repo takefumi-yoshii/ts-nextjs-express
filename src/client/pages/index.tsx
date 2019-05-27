@@ -12,14 +12,13 @@ type Props = {
 //
 class App extends React.Component<Props> {
   static async getInitialProps({ req }: ExNextContext) {
-    if (req.session) {
-      if (req.session.count === undefined) {
-        req.session.count = 0
-      }
-      req.session.count++
-      return { title: 'Home', count: req.session.count }
+    if (!req) return { title: 'No Session', count: 1 }
+    if (!req.session) return { title: 'No Session', count: 1 }
+    if (req.session.count === undefined) {
+      req.session.count = 0
     }
-    return { title: 'No Session', count: 1 }
+    req.session.count++
+    return { title: 'Home', count: req.session.count }
   }
   render() {
     return (
