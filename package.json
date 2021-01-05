@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/connect-redis": "^0.0.9",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "connect-redis": "^3.4.1",
     "cookie-parser": "^1.4.4",
